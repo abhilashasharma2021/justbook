@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:elevation="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="6dp"
+            android:layout_marginTop="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+
+
+                >
+
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_above="@id/ll"
+                    android:background="@color/grey_color"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:weightSum="3"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/img_Time"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+
+                            android:src="@drawable/true_90" />
+
+                        <TextView
+                            android:id="@+id/txt_Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_toRightOf="@id/img_Time"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textColor="@color/black_color"
+                            android:text="17.49"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:background="@color/grey_color"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/img_Day"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/cale_90" />
+
+                        <TextView
+                            android:id="@+id/txt_Day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_toRightOf="@id/img_Day"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textColor="@color/black_color"
+                            android:text="07.01.2018"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:background="@color/grey_color"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+
+                        <ImageView
+                            android:id="@+id/img_Like"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/heart_60" />
+
+                        <TextView
+                            android:id="@+id/txt_Like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_toRightOf="@id/img_Like"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textColor="@color/black_color"
+                            android:text="2"/>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </RelativeLayout>
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/img_Profile"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp"
+        app:shape_circle_borderColor="@color/white_color"
+        app:shape_circle_borderWidth="2dp">
+
+        <!-- YOUR CONTENT -->
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_ProfileNew"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="4dp"
+            android:src="@drawable/use_400">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+
+
+    <TextView
+        android:id="@+id/txt_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_below="@+id/img_Profile"
+        android:textColor="@color/black_color"
+        android:text="Sachin Sharma"/>
+    <RelativeLayout
+        android:id="@+id/rl_New"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_Name"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatRatingBar
+            style="?attr/ratingBarStyleSmall"
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:theme="@style/RatingBar" />
+
+
+
+        <TextView
+            android:id="@+id/txt_Review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/rating"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/grey_color"
+            android:text="@string/best_Review"/>
+        <ImageView
+            android:id="@+id/img_Right"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@id/txt_Review"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/true_90" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

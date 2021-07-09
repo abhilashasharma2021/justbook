@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:elevation="6dp"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="10dp"
+        android:layout_height="220dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                 android:id="@+id/img_singerImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mic"
+                android:scaleType="fitXY"
+                />
+
+
+            <TextView
+                android:id="@+id/txt_singerName"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Alica Singer"
+                android:gravity="center"
+                android:background="@color/black_trans"
+                android:textColor="@color/white_color"
+                android:textSize="14sp"/>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/black_trans"
+                android:layout_height="40dp">
+                <ImageView
+                    android:id="@+id/img_like"
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fav_90"
+                    />
+                <TextView
+                    android:id="@+id/txt_like"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/img_like"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="475"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/golden_color"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

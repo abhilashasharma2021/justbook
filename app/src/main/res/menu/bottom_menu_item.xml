@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_90"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/nav_Events"
+        android:icon="@drawable/event_90"
+        android:title="@string/events"/>
+
+    <item
+        android:id="@+id/nav_Booking"
+        android:icon="@drawable/booking_90"
+        android:title="@string/booking"/>
+
+
+    <item
+        android:id="@+id/nav_Notification"
+        android:icon="@drawable/profile_90"
+        android:title="@string/notification"/>
+    <item
+        android:id="@+id/nav_Profile"
+        android:icon="@drawable/profil"
+        android:title="@string/profile"/>
+
+</menu>

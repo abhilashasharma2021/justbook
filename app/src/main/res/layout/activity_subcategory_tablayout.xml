@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SubcategoryTablayoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/golden_color"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_90"
+            android:padding="14sp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:background="?actionBarItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_centerVertical="true"
+            android:text="@string/place_Sub_categories"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/tablayout"
+            app:tabTextColor="@color/black_color"
+            app:tabIndicatorColor="@color/golden_color"
+            app:tabSelectedTextColor="@color/golden_color"
+            android:contextClickable="true"
+            android:elevation="4dp"
+            android:layout_marginBottom="5dp"
+            app:tabMinWidth="200dp">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

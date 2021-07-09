@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_height="180dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/concert1"/>
+
+            <ImageView
+                android:id="@+id/img_time"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/work1_90"/>
+
+            <TextView
+                android:layout_toRightOf="@id/img_time"
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_color"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="23:00"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+               android:gravity="center"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_height="100dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_location"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toLeftOf="@id/txt_location"
+                        android:src="@drawable/place_90"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Planeta Payner Club Plovdiv"
+                        android:textColor="@color/white_color"
+                        android:textSize="9dp" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_below="@id/txt_location"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/reserve"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rect_corner"
+                    android:textColor="@color/white_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/black_trans"
+
+                android:layout_height="35dp">
+                <ImageView
+                    android:id="@+id/img_like"
+                    android:layout_width="15dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/fav_90"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_like"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toRightOf="@id/img_like"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="0"
+                    android:textColor="@color/golden_color"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

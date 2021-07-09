@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OffersActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/food1">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:background="?actionBarItemBackground"
+                android:padding="14sp"
+                android:src="@drawable/back_90" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="@string/offers"
+                android:textColor="@color/white_color"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+       <!-- <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/r2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/food" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:padding="14dp"
+                    android:src="@drawable/share_90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="-15"
+                    android:textColor="@color/white_color"
+                    android:textSize="16sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/white_trans">
+
+                    <TextView
+                        android:id="@+id/txt_finalbill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="15% discount from final bill"
+                        android:textColor="@color/black_color"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_location"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@id/txt_finalbill"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:padding="3dp"
+                        android:src="@drawable/place_90" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/txt_finalbill"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/img_location"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Bacon Bar &amp;Dinners"
+                        android:textColor="#90000000"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/black_corner"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:text="Reserve this offer"
+                        android:textColor="@color/black_color"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>-->
+
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/recycler_offer_hori"
+     android:layout_marginTop="60dp"
+    android:layout_height="wrap_content">
+
+
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_11"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/recycler_offer_hori"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/golden_color">
+
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/white_corner"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/type_of_place"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/grey_color"
+                        android:textSize="14sp">
+
+
+                    </TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/grey_color" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/white_corner"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/choose_a_date"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/grey_color"
+                        android:textSize="14sp">
+
+
+                    </TextView>
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:padding="14dp"
+                       android:background="?actionBarItemBackground"
+                       android:src="@drawable/cale_90"
+                       android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/white_corner"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/type_of_offer"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/grey_color"
+                        android:textSize="14sp">
+
+
+                    </TextView>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/grey_color" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/white_corner_extra"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/search"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/golden_color"
+                        android:textSize="14sp">
+
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+  <!--   <com.google.android.material.card.MaterialCardView
+         android:layout_width="match_parent"
+         android:layout_below="@+id/rl_11"
+         android:elevation="10dp"
+         android:layout_height="270dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_food"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+
+                android:src="@drawable/circle_dish">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+            <TextView
+                android:id="@+id/txt_foodName"
+                android:layout_toRightOf="@id/profile_food"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Planet Sofia"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/black_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txt_discount"
+                android:layout_toRightOf="@id/profile_food"
+                android:layout_below="@id/txt_foodName"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="20% discount from final bill between 17:00 to 21:00"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/grey_color"
+                android:textSize="12sp"/>
+
+            <TextView
+
+                android:layout_alignParentRight="true"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:text="-20% "
+                android:gravity="center"
+                android:textAlignment="center"
+                android:background="@drawable/golden_half_circle"
+                android:textColor="@color/white_color"
+                android:textSize="12sp"/>
+
+         <RelativeLayout
+             android:layout_marginTop="10dp"
+             android:layout_below="@+id/profile_food"
+             android:layout_width="match_parent"
+             android:elevation="10dp"
+             android:layout_height="170dp">
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/food" />
+
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_alignParentLeft="true"
+                 android:padding="14dp"
+                 android:src="@drawable/share_90" />
+
+
+
+             <TextView
+                 android:id="@+id/txt_1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:fontFamily="@font/roboto_regular"
+                 android:text="Take advantages of this offer by making a reservation"
+                 android:textColor="@color/white_color"
+                 android:textSize="14sp" />
+
+             <TextView
+                 android:layout_below="@id/txt_1"
+                 android:layout_width="100dp"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                 android:fontFamily="@font/roboto_regular"
+                 android:text="Reserve"
+                 android:background="@drawable/white_rect_corner"
+                 android:gravity="center"
+                 android:textColor="@color/white_color"
+                 android:textSize="14sp" />
+
+         </RelativeLayout>
+
+        </RelativeLayout>
+     </com.google.android.material.card.MaterialCardView>-->
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rl_11"
+            android:id="@+id/recycle_offer_vertical"
+            android:layout_height="wrap_content">
+
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

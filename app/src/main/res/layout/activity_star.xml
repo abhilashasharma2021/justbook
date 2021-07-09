@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StarActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/golden_color"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_90"
+            android:padding="14sp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:background="?actionBarItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="@string/stars"
+            android:textColor="@color/white_color"
+            android:textSize="16sp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/grey_rectangle"
+            android:layout_height="50dp">
+
+
+
+            <EditText
+                android:id="@+id/txt_promo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/search_by_artist_name"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:textColor="@color/grey_color"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/search_90"
+                android:padding="14sp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:background="?actionBarItemBackground"
+                android:layout_alignParentRight="true"/>
+
+
+
+        </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey_color">
+        </View>
+
+
+            <TextView
+                android:id="@+id/txt_or"
+                android:layout_toRightOf="@id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/or"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/grey_color"
+                android:textSize="14sp"/>
+          <View
+              android:id="@+id/view1"
+              android:layout_width="150dp"
+              android:layout_height="1dp"
+              android:layout_marginEnd="15dp"
+              android:layout_toRightOf="@id/txt_or"
+              android:layout_marginTop="10dp"
+              android:background="@color/grey_color">
+          </View>
+
+
+      </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/grey_rectangle"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/img_music"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/mucise_90"
+                android:padding="14sp"
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:background="?actionBarItemBackground"
+                android:layout_alignParentLeft="true"/>
+
+
+            <EditText
+                android:layout_toRightOf="@+id/img_music"
+                android:id="@+id/txt_musictype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/filter_by_music_type"
+                android:background="@null"
+                android:textColor="@color/grey_color"
+                android:textSize="14sp"/>
+
+
+
+
+        </RelativeLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recycler_star"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

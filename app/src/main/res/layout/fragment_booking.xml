@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".Fragment.BookingFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/make_Reservation"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black_color"
+            android:fontFamily="@font/opensans_bold"/>
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_Month"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black_color"
+        android:textSize="16sp"
+        android:text="@string/month"/>
+
+
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white_color"
+            app:sizeBottomText="12sp"
+            app:sizeMiddleText="14sp"
+            android:layout_marginTop="10dp"
+            app:selectorColor="@color/golden_color"
+            app:selectedDateBackground="@drawable/uper_golden_corner"
+            app:textColorSelected="#FFFF"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black_color"
+    android:fontFamily="@font/opensans_bold"
+    android:layout_marginStart="20dp"
+    android:textSize="14sp"
+    android:text="@string/select_guests_number_and_time">
+
+
+
+
+</TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/grey_corner_dsgn"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+
+           android:layout_centerVertical="true"
+            android:src="@drawable/name_90"/>
+         <Spinner
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:backgroundTint="@color/black_color"
+             android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+       android:gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/name_90"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:fontFamily="@font/opensans_bold"
+            android:layout_toRightOf="@id/img"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:text="@string/choose_hour"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_Booking"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>

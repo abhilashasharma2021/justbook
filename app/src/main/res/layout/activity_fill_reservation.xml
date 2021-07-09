@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FillReservationActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_above="@+id/rl_reserve"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/golden_color"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_centerVertical="true"
+            android:text="@string/finish_your_reservation"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cancel"
+            android:padding="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:background="?actionBarItemBackground"
+            android:layout_alignParentRight="true"/>
+
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/img_time"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/work_90"/>
+            <TextView
+                android:id="@+id/txt_time1"
+                android:layout_toRightOf="@+id/img_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/time"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/txt_dot"
+                android:layout_toRightOf="@+id/txt_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="125dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text=":"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:layout_toRightOf="@+id/txt_dot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="12:30"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/grey_color">
+        </View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/img_date"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cale_90"/>
+            <TextView
+                android:id="@+id/txt_date1"
+                android:layout_toRightOf="@+id/img_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/date"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/txt_dot1"
+                android:layout_toRightOf="@+id/txt_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="130dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                  android:text=":"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_toRightOf="@+id/txt_dot1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="11.02.2020"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="45dp"
+            android:background="@color/grey_color">
+        </View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/img_consum"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/minimum_90"/>
+            <TextView
+                android:id="@+id/txt_consum1"
+                android:layout_toRightOf="@+id/img_consum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/minimum_consumption"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/txt_dot2"
+                android:layout_toRightOf="@+id/txt_consum1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text=":"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/txt_Consump"
+                android:layout_toRightOf="@+id/txt_dot2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/none"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="45dp"
+            android:background="@color/grey_color">
+        </View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/img_voucher"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/voucher_90"/>
+            <TextView
+                android:id="@+id/txt_voucher1"
+                android:layout_toRightOf="@+id/img_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/minimum_voucher"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/txt_dot3"
+                android:layout_toRightOf="@+id/txt_voucher1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text=":"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/txt_voucher"
+                android:layout_toRightOf="@+id/txt_dot3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/none"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_color">
+        </View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/img_location"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/location_90"/>
+            <TextView
+                android:id="@+id/txt_location"
+                android:layout_toRightOf="@+id/img_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="KOTA"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/grey_color">
+        </View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/jitu_90"/>
+                <TextView
+                    android:id="@+id/txt_userName"
+                    android:layout_toRightOf="@+id/img_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_centerVertical="true"
+                    android:text="Sona"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/grey_color">
+            </View>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+
+                <ImageView
+                    android:id="@+id/img_people"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/number_90"/>
+                <TextView
+                    android:id="@+id/txt_people"
+                    android:layout_toRightOf="@+id/img_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_centerVertical="true"
+                    android:text="@string/people"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/txt_dot5"
+                    android:layout_toRightOf="@+id/txt_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text=":"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/txt_no.ofperson"
+                    android:layout_toRightOf="@+id/txt_dot5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="2"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="30dp"
+            android:background="@color/grey_color">
+        </View>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1">
+
+
+
+            <ImageView
+                android:id="@+id/img_reserved"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sigar"/>
+
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/img_reserved"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_reserved"
+                android:layout_toRightOf="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/reservation_for_smokers"
+                android:textColor="@color/grey_color"
+                android:textSize="14sp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/grey_color">
+        </View>
+        <TextView
+            android:id="@+id/txt_promocode"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_centerVertical="true"
+            android:text="@string/add_Promo_code"
+            android:textColor="@color/black_color"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/grey_rectangle"
+            android:layout_height="50dp">
+
+
+
+            <EditText
+                android:id="@+id/txt_promo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="@string/promo_code"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:textColor="@color/grey_color"
+                android:textSize="14sp"/>
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/grey_rectangle"
+            android:layout_height="80dp">
+
+
+
+            <EditText
+                android:id="@+id/txt_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="Reservation note"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:textColor="@color/grey_color"
+                android:textSize="14sp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            >
+
+
+
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_termandcondition"
+                android:layout_toRightOf="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_centerVertical="true"
+                android:text="Terms And Conditions"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_reserve"
+        android:layout_width="match_parent"
+        android:background="@color/golden_color"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Reserve Now"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

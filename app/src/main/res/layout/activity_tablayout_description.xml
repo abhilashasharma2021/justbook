@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TablayoutDescriptionActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="327dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/white_corner_dsgn"
+                    android:elevation="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/img_Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:alpha="0.8"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/images_1" />
+                </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/imgCard"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:id="@+id/txt_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="KOTO"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/golden_color"
+                        android:textSize="14sp" />
+
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        style="?attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="25dp"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:id="@+id/rating"
+                        android:layout_alignParentRight="true"
+                        android:saveEnabled="true"
+                        android:theme="@style/RatingBar" />
+
+                </RelativeLayout>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginTop="5dp"
+             android:background="@color/grey_color">
+         </View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:weightSum="2.4">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/rl_Deta"
+                            android:layout_height="25dp">
+                        <ImageView
+                            android:id="@+id/img_Name"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/type_90" />
+
+                        <TextView
+                            android:id="@+id/txt_Address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/img_Name"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Port Of varsa"
+                            android:textColor="@color/black_color"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/rl_Deta"
+                        android:layout_height="25dp">
+                        <ImageView
+
+                            android:id="@+id/img_Address"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/location_90" />
+
+                        <TextView
+
+                            android:id="@+id/txt_Location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_toRightOf="@id/img_Address"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="Port Of varsa"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/black_color"
+                            android:textSize="14sp" />
+
+                </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="80dp"
+                        android:background="@color/grey_color">
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/rl_Deta1"
+                            android:layout_marginEnd="5dp"
+                            android:layout_height="25dp">
+                            <ImageView
+                                android:id="@+id/img_Time"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/work_90" />
+
+                            <TextView
+                                android:id="@+id/txt_StratTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/img_Time"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text="09.00"
+                                android:textColor="@color/black_color"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txt_arrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/txt_StratTime"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text="-"
+                                android:textColor="@color/black_color"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txt_EndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/txt_arrow"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text="03.00"
+                                android:textColor="@color/black_color"
+                                android:textSize="14sp" />
+
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/rl_Deta1"
+                            android:layout_height="25dp">
+                            <ImageView
+
+                                android:id="@+id/img_Mobile"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/phone_90" />
+
+                            <TextView
+
+                                android:id="@+id/txt_Mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_toRightOf="@id/img_Mobile"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text="1234567890"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black_color"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_color">
+                </View>
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    app:tabTextColor="@color/black_color"
+                    app:tabIndicatorColor="@color/golden_color"
+                    app:tabSelectedTextColor="@color/golden_color"
+                    android:contextClickable="true"
+                    app:tabMinWidth="200dp">
+
+
+
+                </com.google.android.material.tabs.TabLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin">
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                      android:visibility="gone"
+                    app:tabTextColor="@color/black_color"
+                    app:tabIndicatorColor="@color/golden_color"
+                    app:tabSelectedTextColor="@color/golden_color"
+
+                    app:tabMinWidth="200dp">
+
+
+
+                </com.google.android.material.tabs.TabLayout>
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/btnReverse"
+            android:layout_height="wrap_content"
+
+            />
+
+            <Button
+                android:id="@+id/btnReverse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Reserve Now"
+                android:textColor="@color/white_color"
+                android:textSize="14sp"
+                android:background="@color/green_color"
+                android:layout_alignParentBottom="true"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

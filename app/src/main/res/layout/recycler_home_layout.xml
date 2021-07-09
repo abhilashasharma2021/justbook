@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_corner_dsgn"
+        android:elevation="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imgCard"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp"
+            app:cardMaxElevation="6dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/img_Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:alpha="0.8"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/images_1" />
+
+                <TextView
+                    android:id="@+id/txt_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/black_trans"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:text="KOTO"
+                    android:textColor="@color/white_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <RelativeLayout
+            android:id="@+id/rl_Add"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/imgCard"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/img_Map"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/koto_90" />
+
+            <TextView
+                android:id="@+id/txt_Address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/img_Map"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Port Of varsa"
+                android:textColor="@color/black_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/rl_Add"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rl_rate"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:saveEnabled="true"
+
+                android:theme="@style/RatingBar" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/golden_corner"
+            android:gravity="center"
+            android:text="@string/reserve"
+            android:layout_below="@+id/rl_rate"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/golden_color"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
